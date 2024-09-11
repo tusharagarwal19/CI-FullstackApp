@@ -25,15 +25,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./frontend  # Adjust this path to where your package.json is located
+        working-directory: ./backend  # Point to the backend folder where package.json is located
 
       - name: Run tests
         run: npm test
-        working-directory: ./frontend
+        working-directory: ./backend  # Point to the backend folder where tests are located
 
       - name: Run linter
         run: npm run lint
-        working-directory: ./frontend
+        working-directory: ./backend  # Point to the backend folder where linter scripts are located
 
       - name: Completion message
         run: |

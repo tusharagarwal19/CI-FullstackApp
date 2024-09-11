@@ -30,7 +30,7 @@ jobs:
         run: cd backend && npm test  # No working-directory if package.json is in root
 
       - name: Run linter
-        run: cd backend && npm run lint  # No working-directory if package.json is in root
+        run: cd backend && npm init @eslint/config && npm run lint  # No working-directory if package.json is in root
 
       - name: Completion message
         run: |

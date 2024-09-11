@@ -24,13 +24,13 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: cd ../backend && npm install  # No working-directory if package.json is in root
+        run: cd backend && npm install  # No working-directory if package.json is in root
 
       - name: Run tests
-        run: cd ../backend && npm test  # No working-directory if package.json is in root
+        run: cd backend && npm test  # No working-directory if package.json is in root
 
       - name: Run linter
-        run: cd ..backend && npm run lint  # No working-directory if package.json is in root
+        run: cd backend && npm run lint  # No working-directory if package.json is in root
 
       - name: Completion message
         run: |
